@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FEEDLY | Smart Feedback Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">✦</span>
+            FEEDLY
+        </div>
+
+        <div class="nav-links">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#feedback">Feedback</a>
+            <a href="#reviews">Reviews</a>
+        </div>
+
+        <div class="nav-badge">
+            <span></span> LIVE
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+    <header id="dashboard" class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                ✨ SMART FEEDBACK PLATFORM
+            </div>
+
+            <h1>
+                Your Voice.
+                <span>Our Improvement.</span>
+            </h1>
+
+            <p>
+                Share your learning experience and help create
+                a smarter, better and more student-friendly
+                academic environment.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#feedback" class="hero-button">
+                    Give Feedback →
+                </a>
+
+                <a href="#reviews" class="hero-secondary">
+                    View Reviews
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-orb orb-one"></div>
+        <div class="hero-orb orb-two"></div>
+
+        <div class="hero-grid"></div>
+
+    </header>
+
+
+    <!-- STATISTICS -->
+    <section class="stats">
+
+        <div class="stat-card">
+            <div class="stat-icon">⭐</div>
+
+            <div>
+                <h3 id="averageRating">0.0</h3>
+                <p>Average Rating</p>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <div class="stat-icon">💬</div>
+
+            <div>
+                <h3 id="totalFeedback">0</h3>
+                <p>Total Feedback</p>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <div class="stat-icon">📚</div>
+
+            <div>
+                <h3 id="totalSubjects">0</h3>
+                <p>Subjects</p>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <div class="stat-icon">⚡</div>
+
+            <div>
+                <h3>100%</h3>
+                <p>Active System</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <main>
+
+        <!-- FEEDBACK FORM -->
+        <section id="feedback" class="feedback-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">
+                        FEEDBACK
+                    </span>
+
+                    <h2>
+                        Tell us about your experience
+                    </h2>
+
+                    <p>
+                        Your honest feedback helps improve teaching,
+                        subjects and student experience.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <form id="feedbackForm">
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label for="studentName">
+                            Student Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentName"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="studentEmail">
+                            Student Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="studentEmail"
+                            placeholder="student@example.com"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <select id="subject" required>
+
+                        <option value="">
+                            Select a subject
+                        </option>
+
+                        <option value="Java">
+                            Java Programming
+                        </option>
+
+                        <option value="Python">
+                            Python Programming
+                        </option>
+
+                        <option value="Data Structures">
+                            Data Structures
+                        </option>
+
+                        <option value="Web Development">
+                            Web Development
+                        </option>
+
+                        <option value="Database">
+                            Database Management
+                        </option>
+
+                        <option value="Math">
+                            Mathematics
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- RATING -->
+
+                <div class="rating-area">
+
+                    <label>
+                        How was your experience?
+                    </label>
+
+                    <div class="rating-options">
+
+                        <label class="rating-option">
+                            <input type="radio" name="rating" value="1">
+                            <span>😞</span>
+                            <small>Poor</small>
+                        </label>
+
+                        <label class="rating-option">
+                            <input type="radio" name="rating" value="2">
+                            <span>😕</span>
+                            <small>Bad</small>
+                        </label>
+
+                        <label class="rating-option">
+                            <input type="radio" name="rating" value="3">
+                            <span>😐</span>
+                            <small>Okay</small>
+                        </label>
+
+                        <label class="rating-option">
+                            <input type="radio" name="rating" value="4">
+                            <span>🙂</span>
+                            <small>Good</small>
+                        </label>
+
+                        <label class="rating-option">
+                            <input type="radio" name="rating" value="5">
+                            <span>🤩</span>
+                            <small>Excellent</small>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COMMENT -->
+
+                <div class="input-group">
+
+                    <label for="comment">
+                        Your Feedback
+                    </label>
+
+                    <textarea
+                        id="comment"
+                        placeholder="Tell us what you liked and what can be improved..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    🚀 Submit Feedback
+                </button>
+
+                <div id="message"></div>
+
+            </form>
+
+        </section>
+
+
+        <!-- REVIEWS -->
+
+        <section id="reviews" class="reviews-section">
+
+            <div class="reviews-header">
+
+                <div>
+                    <span class="section-label">
+                        COMMUNITY
+                    </span>
+
+                    <h2>
+                        Recent Feedback
+                    </h2>
+                </div>
+
+                <button
+                    id="loadFeedback"
+                    class="refresh-button"
+                    type="button"
+                >
+                    ↻ Refresh
+                </button>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="feedback-tools">
+
+                <div class="search-box">
+
+                    <span>🔎</span>
+
+                    <input
+                        type="text"
+                        id="searchFeedback"
+                        placeholder="Search feedback, student or subject..."
+                    >
+
+                </div>
+
+
+                <select id="subjectFilter">
+
+                    <option value="all">
+                        All Subjects
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- RESULT COUNT -->
+            <div id="resultCount" class="result-count"></div>
+
+
+            <!-- FEEDBACK LIST -->
+
+            <div
+                id="feedbackList"
+                class="feedback-list"
+            >
+
+                <div class="loading">
+                    ⏳ Loading feedback...
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            ✦ FEEDLY
+        </div>
+
+        <p>
+            Smart Feedback • Better Education • Better Experience
+        </p>
+
+        <span>
+            © 2026 FEEDLY
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
