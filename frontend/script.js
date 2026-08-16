@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://feedly-feedback-rating-portal.onrender.com/api";
 
 const feedbackForm = document.getElementById("feedbackForm");
 const message = document.getElementById("message");
